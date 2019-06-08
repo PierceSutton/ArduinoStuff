@@ -19,7 +19,7 @@ Keypad customKeypad = Keypad( makeKeymap(hexaKeys), rowPins, colPins, ROWS, COLS
 void setup() {
   Serial.begin(9600);
 }
-
+//waits for a new input until it recieves 9. It will then display a color that corrosponds to the hexidecimal.
 void loop() {
   char customKey = customKeypad.getKey();
   int input = 0;
